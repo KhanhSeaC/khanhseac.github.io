@@ -2,14 +2,44 @@
 <!--"!" + "Enter" => template-->
 <html lang="vi">
     <head>
+        <title> My first website</title>
         <meta charset="UTF-8">
         <meta name="description" content="TranTrongKhanh11Tin1ChuyenNguyenHue19082009">
-        <title>TranTrongKhanh11Tin1ChuyenNguyenHue19082009</title>
+        <meta name="keywords" content="html, learning, testing">
+        <meta name="author" content="khanhseac">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <!--Thẻ <meta> trong HTML dùng để cung cấp thông tin mô tả (metadata) về trang web cho trình duyệt và công cụ tìm kiếm
+         Metadata không hiển thị trực tiếp trên trang, nhưng rất quan trọng cho SEO, hiển thị và cách trình duyệt xử lý trang. 🌐-->
     </head>
-
+    <!--meta chi nam trong head-->
+    <style>
+        html {
+            background-image: linear-gradient(90deg,rgba(0, 255, 204,0.5), rgba(0, 51, 51,0.5)), url(/img/1323097.jpeg);
+            background-size: 100%;
+        }
+        body{
+            color: #0f0f1a
+        }
+        ul li::marker {
+            font-weight: bold;
+        }
+        h2{
+            color:rgb(12, 97, 69)
+        }
+        th{
+            text-align: center;
+            width: 200;
+        }
+        td{
+            text-align: center;
+        }
+    </style>
+    <!--in đậm số trong list-->
+    <!--căn lề giữa-->
     <body>
         <!--This is comment-->
-        <h1> I like nigga </h1>
+        <h1 style = "background-color: rgb(228, 45, 45); color:aqua"> I like nigga </h1>
         <hr>
         <h2> I like nigga </h2>
         <br>
@@ -21,10 +51,20 @@
         <h3 id = "nigga">This is nigga</h3>
         <a href = "https://www.facebook.com/khanh.tran.222995" target=_blank>
         <img src = "\img\hutao.jpg" height="400" alt="this is my waifu" title="best waifu">
+        </a>
         <!-- nếu bỏ ở file khác phải dẫn link file-->
         <!-- chỉnh heigh hoặc weight riêng sẽ tự căn ảnh-->
-        </a>
-        <audio controls autoplay loop>
+        <h2><b>This is bold text</b></h2>
+        <h2><i>This is italic</i></h2>
+        <h2><big>This is big text</big></h2>
+        <h2><small>This is small text</small></h2>
+        <h2><sub>This is subtitle</sub> and unsubtitle</h2>
+        <h2><sup>This is supertitile</sup> and unsupertitle</h2>
+        <h2><ins>This is underlined text</ins></h2>
+        <a href = "https://www.youtube.com/watch?v=Aq5WXmQQooo&list=RDAq5WXmQQooo&start_radio=1" target = _blank><h2><del>porn kid here!</del></h2></a>
+        <h2><mark style = "background-color: rgb(17, 203, 188);">This is marked text</mark></h2>
+        <!--background color để set màu marker-->
+        <audio controls autoplay loop muted>
             <source  src="/aud/nhac1.mp3"> 
             <source  src="/aud/nhac1.wav">
             Hello
@@ -32,6 +72,103 @@
         <!--controls để hiện thanh bật tắt âm thanh-->
         <!--autoplay de tu bat nhac-->
         <!--loop để lặp lại nhạc-->
-        <video controls src = "/vid/Gala - Freed From Desire (Lyrics) - Full Audio, 4k Video.mp4"></video>
+        <!--muted như nghĩa-->
+        <video controls autoplay loop muted height = "250" >
+            <source src = "/vid/Gala - Freed From Desire (Lyrics) - Full Audio, 4k Video.mp4">
+            <source src = "/vid/Gala - Freed From Desire (Lyrics) - Full Audio, 4k Video.mkv">
+        </video>
+        <!--comment giong audio-->
+        <h2 title = "sex">Unordered List</h2>
+        <ul style = "list-style-type:decimal;">
+            <li>mot</li>
+            <li>hai</li>
+            <li>ba</li>
+            <li>bon</li>
+            <li>nam
+                <ul style = "list-style-type:disc;">
+                    <li> 5 </li>
+                    <li> V </li>
+                    <li> five </li>
+                    <li> Wu </li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Ordered List</h2>
+        <ol type = "A">
+            <li>mot</li>
+            <li>hai</li>
+            <li>ba</li>
+            <li>bon</li>
+            <li>nam</li>
+        </ol>
+        <h2>Description List</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>C++</dt>
+            <dd>C cac cac</dd>
+        </dl>
+        <h2> Table </h2>
+        <table style="background-color: black;" width ="700">
+            <tr style = "background-color: rgb(22, 175, 226);">
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Thursday</th>
+                <th>Wednesday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+            <tr style = "background-color: rgb(198, 228, 30);" text-align="center">
+                <td> Chu Nhat</td>
+                <td> Thu Hai</td>
+                <td> Thu Ba</td>
+                <td> Thu Tu</td>
+                <td> Thu Nam</td>
+                <td> Thu Sau</td>
+                <td> Thu Bay</td>   
+            </tr>
+        </table>
+        <!--bgcolor de set mau background table-->
+        <p style="color: rgb(248, 90, 90); font-weight: 700;"><span mark style="background-color: rgb(235, 235, 148);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> A praesentium, at quam nobis officia et fuga ad commodi dignissimos consequatur, incidunt assumenda illo. Adipisci reprehenderit vel facere fuga ea quam.</p>
+        <!--span để gắn lệnh/ điều kiện lên 1 đoạn trong văn bản-->
+        <div style = "background-color: rgb(239, 239, 138);">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, aliquam aut architecto sit quis quaerat vitae ab, illo provident repudiandae debitis blanditiis dolorem iste! Nulla aut modi rem tempore sapiente.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus reiciendis ab quos omnis dolorum veritatis vitae commodi molestiae quod tempore aliquam, sapiente quidem, numquam ipsam tempora dolore quibusdam aut ut.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum, dolorum nobis excepturi aut corporis pariatur dolor, illum in, cum distinctio! Repellendus repudiandae tempore ipsa cumque. Architecto excepturi exercitationem labore.
+            </p>
+        </div>
+        <!-- ngược lại với span, div để gán điều kiện lên 1 khối đoạn-->
     </body>
 </html>
+
+<!--
+git add .
+git commit -m "commit"
+git push origin main
+neu la lan dau thi
+git push -u origin main
+
+(check branch) git branch
+neu la main thi ok
+neu la master
+git branch -M main
+git push -u origin main
+
+(pull file)
+git pull origin main --allow-unrelated-histories
+
+thay file upload
+
+git remote set-url origin <file>
+ten file: https://khanhseac.github.io/
+thi phai la: https://github.com/khanhseac/khanhseac.github.io.git
+
+check file
+git remote -v
+-->
